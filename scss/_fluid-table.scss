@@ -1,0 +1,50 @@
+/**, *:before, *:after {*/
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+
+/*}*/
+
+.container-fluid {
+    margin: auto;
+    display: table;
+    text-align: center;
+    color: inherit;
+}
+
+
+.column{
+    float: left;
+}
+
+@media (min-width: 989px) {
+
+    .row-last {
+        /*background-color: #ffff00;*/
+        float: left;
+    }
+}
+
+@media (min-width: 440px) and (max-width: 988px) {
+
+    .row-of-3, .row-last {
+        clear: both;
+    }
+
+}
+
+@media (min-width: 256px) and ( max-width: 439px) {
+
+    .row-of-2, .row-last {
+        clear: both;
+    }
+
+}
+
+@media (max-width: 275px) {
+
+    .row-last, .column{
+        clear: both;
+    }
+}
+
